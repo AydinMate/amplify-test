@@ -120,7 +120,6 @@ export async function GET(
   { params }: { params: { storeId: string } }
 ) {
   try {
-    const { searchParams } = new URL(req.url);
 
     if (!params.storeId) {
       return new NextResponse("Store ID is required", { status: 400 });
