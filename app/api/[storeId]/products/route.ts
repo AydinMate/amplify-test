@@ -100,7 +100,7 @@ export async function GET(
 
     const products = await prismadb.product.findMany({
       where: {
-        storeId: params.storeId,
+        storeId: "319e42e8-2651-480f-85ff-3ed22b05ab09",
         categoryId,
         colourId,
         sizeId,
